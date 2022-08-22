@@ -1,0 +1,254 @@
+.footer {
+  font: 20px/1.26 "PT sans", sans-serif;
+  max-width: 1375px;
+  width: calc(100vw * 1375 / 1440);
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    max-width: 735px;
+    width: calc(100% - 32px);
+    font: 14px/18.13px "PT sans", sans-serif;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    min-width: 296px;
+    width: calc(100% - 24px);
+    margin-bottom: 16px;
+  }
+}
+.footer__social_networks {
+  margin-left: 190px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__social_networks {
+    margin-left: 360px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__social_networks {
+    order: 1;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.footer__social_icon {
+  padding: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__social_icon {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+  }
+}
+
+.footer__logo_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__logo_section {
+    margin: 28px 0 0;
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__logo_section {
+    flex-direction: column;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__list_item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__social_networks .footer__list_item {
+    display: inline;
+    margin: 0;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__legal_info .footer__list_item {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__legal_info .footer__list_item {
+    margin-bottom: 4px;
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__link_text {
+    display: none;
+  }
+}
+
+.footer__links_section {
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  min-height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__links_section {
+    border-top-color: rgba(165, 205, 171, 0.4);
+    border-bottom-color: rgba(165, 205, 171, 0.4);
+    text-transform: uppercase;
+    min-height: 68px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links_section {
+    min-height: 106px;
+  }
+}
+
+.footer__links_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__social_networks .footer__links_list {
+    width: 80px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__links_item:not(:last-of-type) {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links_item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .footer__links_item {
+    height: 18px;
+  }
+  .footer__links_item:first-of-type {
+    margin-left: 13px;
+  }
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font: 16px/1.18 "PT sans", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__links {
+    font: 14px/1.21 "PT sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links {
+    min-height: 56px;
+    flex-wrap: wrap;
+    max-width: 260px;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #323232;
+}
+
+.footer__link:hover {
+  border-bottom: 1px solid #323232;
+  margin-bottom: -1px;
+}
+
+.footer__legal_info {
+  margin-right: 54px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__legal_info {
+    height: fit-content;
+    margin-top: 36px;
+    margin-right: 0;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__legal_info {
+    order: 3;
+    margin-top: 29px;
+    margin-bottom: 16px;
+    margin-right: 0;
+    margin-top: 29px;
+    margin-bottom: 16px;
+    align-self: center;
+  }
+}
+
+.logo_place_footer {
+  min-width: 290px;
+  height: 30px;
+}
+@media screen and (max-width: 1023px) {
+  .logo_place_footer {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo_place_footer {
+    order: 2;
+    min-width: 256px;
+    height: 26px;
+  }
+}
+
+.logo {
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

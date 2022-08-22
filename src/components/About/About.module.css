@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+  background-color: #F7F4F0;
+  box-sizing: border-box;
+  padding: 70px 32px 114px;
+}
+
+.text {
+  max-width: 1163px;
+  font: 400 normal 46px/1.2 'WF', Arial, sans-serif;
+  margin: 0;
+}
+
+@media all and (max-width: 1023px) {
+  .about {
+    padding: 40px 16px 28px;
+  }
+
+  .text {
+    max-width: 676px;
+    font: 400 normal 30px/1.24 'WF', Arial, sans-serif;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .about {
+    padding: 32px 12px 92px;
+  }
+
+  .text {
+    max-width: 336px;
+    font: 400 normal 26px/1 'WF', Arial, sans-serif;
+    margin: 0 auto;
+  }
+}

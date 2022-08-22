@@ -1,0 +1,39 @@
+.prozhito {
+  padding-bottom: 164px;
+  background-color: #F7F4F0;
+}
+
+.list {
+    max-width: 1144px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 32px;
+    list-style: none;
+}
+
+@media all and (max-width: 1023px) {
+  .prozhito {
+    padding-bottom: 36px;
+  }
+
+  .list {
+    gap: 24px 12px;
+    grid-template-columns: repeat(2, 362px);
+    justify-content: center;
+    padding: 0 16px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .prozhito {
+    padding-bottom: 96px;
+  }
+
+  .list {
+    grid-template-columns: minmax(30%, 334px);
+    gap: 12px;
+    padding: 0 12px;
+  }
+}

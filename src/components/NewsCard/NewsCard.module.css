@@ -1,0 +1,98 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: "description image" 
+                          "text-date text-date";
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+.description{
+    font-size: 14px;
+    line-height: 18px;
+
+    grid-area: description;
+}
+.date{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.chapter{
+    margin: 0;
+}
+.image{
+    width: 212px;
+    height: 223px;
+    object-fit: cover;
+    grid-area: image;
+}
+.text{
+    margin: 0;
+    margin-top: 20px;
+
+    font-size: 20px;
+    line-height: 26px;
+    opacity: 0.6;
+
+    grid-area: text-date;
+}
+
+@media screen and (max-width:1200px) {
+    .image{
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    .image{
+        width: 130.47px;
+        height: 180px;
+    }
+    .cardContainer{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .text{
+        font-size: 17px;
+        line-height: 20px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .image{
+        width: 102px;
+        height: 120px;
+    }
+    .cardContainer{
+        font-size: 12px;
+    }
+    .text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .card{
+        grid-template-columns: 1fr; 
+        grid-template-areas: "image" 
+                             "text-date"
+                             "description";
+    }
+    .image{
+        width: 336px;
+        height: 160px;
+        justify-self: center;
+    }
+    .text{
+        margin-top: 8px;
+    }
+    .description{
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 8px;
+    }
+}

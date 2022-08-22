@@ -1,0 +1,128 @@
+.button {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 330px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #a5cdab;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background: #97ba9c;
+}
+
+.button:active {
+  background: #7a9f80;
+}
+
+.button:disabled {
+  opacity: 0.3;
+  cursor: unset;
+}
+
+.text {
+  margin-right: 16px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.rectTransparent {
+  border: 1px solid #a5cdab;
+  background: transparent;
+}
+.rectTransparent:hover {
+  border: 1px solid #97ba9c;
+  background: transparent;
+}
+
+.circTransparent {
+  background: transparent;
+  width: 17px;
+  height: 12px;
+}
+
+.circTransparent:hover {
+  opacity: 0.5;
+  background: transparent;
+}
+
+.arrowCircle {
+  color: #323232;
+  width: 17px;
+  height: 12px;
+}
+
+.arrowRectangle {
+  color: #323232;
+  width: 17px;
+  height: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .button {
+    max-width: 237px;
+    height: 48px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .circle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .circTransparent {
+    background: transparent;
+    width: 18px;
+    height: 10px;
+  }
+
+  .arrowCircle {
+    width: 18px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    max-width: 335px;
+    height: 50px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circTransparent {
+    background: transparent;
+    width: 22px;
+    height: 12px;
+  }
+
+  .arrowCircle {
+    width: 22px;
+    height: 12px;
+  }
+
+  .arrowRectangle {
+    width: 11px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,240 @@
+.materials {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 310px;
+  margin: 0 auto;
+  padding: 56px 148px 75px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font: normal 2.3em/1.2 'WF', 'PT Sans', sans-serif;
+  color: #323232;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform 1s ease-in;
+}
+
+@media screen and (max-width: 360px) {
+  .cards {
+    display: none;
+  }
+}
+
+.card {
+  width: 328px;
+  height: 428px;
+  background-color: #e7e4de;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    width: 238px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    flex-shrink: 0;
+    width: 276px;
+    margin-right: 12px;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    margin-right: 41px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .materials {
+    padding: 32px 0;
+    width: calc(100% - 34px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .materials {
+    overflow: hidden;
+    width: calc(100% - 41px);
+    margin-right: 0;
+  }
+}
+
+.cardLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.cardLink:hover,
+.cardLink:active {
+  opacity: 0.8;
+}
+
+.cardTag {
+  position: absolute;
+  top: -16px;
+  max-width: calc(328px - 16px * 2); /* где 16px горизонтальный padding*/
+  margin: 0;
+  padding: 8px 32px;
+  box-sizing: border-box;
+  background: #a5cdab;
+  border-radius: 8px;
+  font: normal 0.7em/1.28 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #323232;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardTag {
+    top: -12px;
+    max-width: calc(250px - 16px * 2);
+    padding: 4px 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardTag {
+    padding: 4px 12px;
+    font-size: 0.85em;
+    line-height: 1.33;
+  }
+}
+
+.cardTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 296px;
+  max-height: 52px;
+  margin: 0;
+  padding: 0;
+  font: normal 1.3em/1 'WF', 'PT Sans', sans-serif;
+  color: #323232;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardTitle {
+    max-width: 213px;
+    max-height: 44px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardTitle {
+    width: 252px;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+}
+
+.cardImage {
+  width: 200px;
+  height: 224px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardImage {
+    width: 173px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardImage {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+.cardText {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 100%;
+  max-width: 296px;
+  height: 100%;
+  max-height: 68px;
+  margin: 0;
+  padding: 0;
+  font: normal 0.8em/1.31 'PT Sans', sans-serif;
+  text-align: center;
+  color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width: 1023px) {
+  .cardText {
+    max-width: 213px;
+    font-size: 1em;
+    line-height: 1.28;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardText {
+    max-width: 252px;
+    font-size: 0.85em;
+    line-height: 1.33;
+  }
+}
+
+.cardsCarousel {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  .cardsCarousel {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}

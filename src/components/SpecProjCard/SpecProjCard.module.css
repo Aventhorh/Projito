@@ -1,0 +1,155 @@
+.card {
+  background-color: #f7f4f0;
+  width: 100%;
+  max-width: 678px;
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card:first-child {
+    height: 403px;
+  }
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    max-width: 361px;
+    min-height: 354px;
+    flex-direction: column;
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin: 24px 0 0;
+    background-color: #fff;
+  }
+
+  .card:first-child {
+    margin: 0;
+  }
+}
+
+.img {
+  max-width: 212px;
+  height: 352px;
+  object-fit: cover;
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 1023px) {
+  .img {
+    max-width: 359px;
+    height: 182px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .img {
+    height: 200px;
+  }
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #323232;
+}
+
+@media screen and (max-width: 767px) {
+  .main-text {
+    border: solid 1px #a5cdab;
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .field {
+    margin: 0 auto;
+    width: calc(100% - 24px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .field {
+    margin-left: 8px;
+    max-width: 327px;
+  }
+}
+
+.subtitle {
+  font-family: 'WF', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  margin: 28px 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 12px 0 0;
+  }
+}
+
+.description {
+  font-family: 'PT sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  opacity: 0.6;
+  max-width: 428px;
+  margin: 18px 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .description {
+    opacity: 1;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 8px 0 0;
+  }
+}
+
+.date {
+  font-family: 'PT sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 17px;
+}
+
+@media screen and (max-width: 1023px) {
+  .date {
+    margin: 0 0 12px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .date {
+    margin: 24px 0 12px 8px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

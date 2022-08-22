@@ -1,0 +1,198 @@
+.carousel {
+  overflow: hidden;
+  /* нахлест карточек */
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  padding-top: 12px;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.indicators > button {
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #a5cdab;
+  border-color: #a5cdab;
+  border: 0;
+  border-radius: 4px;
+}
+
+.indicators > button.activeBtn {
+  background-color: #3a543e;
+  border-color: #3a543e;
+}
+
+.cardTag {
+  position: absolute;
+  top: -16px;
+  max-width: calc(328px - 16px * 2); /* где 16px горизонтальный padding*/
+  margin: 0;
+  padding: 8px 32px;
+  box-sizing: border-box;
+  background: #a5cdab;
+  border-radius: 8px;
+  font: normal 0.7em/1.28 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #323232;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardTag {
+    top: -12px;
+    max-width: calc(250px - 16px * 2);
+    padding: 4px 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardTag {
+    padding: 4px 12px;
+    font-size: 0.85em;
+    line-height: 1.33;
+  }
+}
+
+.cardLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.cardLink:hover,
+.cardLink:active {
+  opacity: 0.8;
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  max-width: 296px;
+  max-height: 52px;
+  margin: 0;
+  padding: 25px;
+  font: normal 1.3em/1 'WF', 'PT Sans', sans-serif;
+  color: #323232;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardTitle {
+    max-width: 213px;
+    max-height: 44px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardTitle {
+    max-width: 252px;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+}
+
+.textWrapper {
+  width: 252px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cardText {
+  width: 100%;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  font: normal 0.8em/1.31 'PT Sans', sans-serif;
+  text-align: center;
+  color: rgb(50, 50, 50);
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardText {
+    font-size: 1em;
+    line-height: 1.28;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardText {
+    max-width: 300px;
+    font-size: 0.85em;
+    line-height: 1.33;
+    white-space: normal;
+  }
+}
+
+.cardImage {
+  width: 200px;
+  height: 224px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 1023px) {
+  .cardImage {
+    width: 173px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardImage {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+.App {
+  /* задать ширину карточки */
+  width: 350px;
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  width: 328px;
+  height: 428px;
+  background-color: #e7e4de;
+}
